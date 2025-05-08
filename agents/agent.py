@@ -22,4 +22,4 @@ with ToolCollection.from_mcp(
     server_parameters, trust_remote_code=True
 ) as tool_collection:
     agent = ToolCallingAgent(tools=[*tool_collection.tools], model=model)
-    agent.run("What was Apple's last stock price?")
+    agent.run("What you can tell about Apple's cash flow statement in last quarter?")
