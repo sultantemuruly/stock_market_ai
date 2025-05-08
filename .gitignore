@@ -1,10 +1,70 @@
-# Python-generated files
+# Bytecode and cache
 __pycache__/
 *.py[oc]
+*.pyo
+*.pyd
+
+# Build artifacts
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
+*.manifest
+*.spec
 
 # Virtual environments
-.venv
+.venv/
+env/
+venv/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# System-specific
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+*.log
+*.pid
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.cfg
+secrets.yaml
+config.yaml
+
+# SQLite and local databases
+*.sqlite3
+*.db
+*.sqlite
+
+# Agent outputs (if any)
+*.jsonl
+*.cache
+.history/
+checkpoints/
+artifacts/
+
+# Coverage and test artifacts
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+
+# MCP and tool server temp files
+tool_server_logs/
+mcp_temp/
