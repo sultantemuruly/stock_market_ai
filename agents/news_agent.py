@@ -14,7 +14,7 @@ model = LiteLLMModel(
 
 server_parameters = StdioServerParameters(
     command="uv",
-    args=["run", "../server/financial_data_server.py"],
+    args=["run", "../server/news_server.py"],
     env=None,
 )
 
@@ -22,6 +22,4 @@ with ToolCollection.from_mcp(
     server_parameters, trust_remote_code=True
 ) as tool_collection:
     agent = ToolCallingAgent(tools=[*tool_collection.tools], model=model)
-    agent.run(
-        "Can you provide an overview of IBM's financial condition in recent times?"
-    )
+    agent.run("What's the recent news sentiment for IBM in the last week?")
