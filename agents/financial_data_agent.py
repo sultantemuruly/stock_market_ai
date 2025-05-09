@@ -14,7 +14,7 @@ model = LiteLLMModel(
 
 server_parameters = StdioServerParameters(
     command="uv",
-    args=["run", "../server/server.py"],
+    args=["run", "../server/financial_data_server.py"],
     env=None,
 )
 

@@ -7,9 +7,14 @@ requires-python = ">=3.12"
 dependencies = [
     "colorama>=0.4.6",
     "google-auth>=2.40.1",
+    "joblib",
     "litellm>=1.68.1",
     "mcp[cli]>=1.7.1",
+    "murmurhash>=1.0.12",
+    "newsapi-python>=0.2.7",
+    "nltk>=3.9.1",
     "python-dotenv>=1.1.0",
     "smolagents[mcp]>=1.15.0",
+    "textblob",
     "yfinance>=0.2.59",
 ]
