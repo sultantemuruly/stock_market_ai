@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "colorama>=0.4.6",
+    "fastapi>=0.115.12",
     "google-auth>=2.40.1",
     "joblib",
     "litellm>=1.68.1",
